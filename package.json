@@ -1,0 +1,14 @@
+{
+  "name": "nagocombodatabase",
+  "version": "1.0.0",
+  "description": "Collection and sorting of many situational combos for Nagoriyuki in Guilty Gear Strive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Berk Yılmaz",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
