@@ -1,0 +1,61 @@
+:root {
+    --nGray: #2B2F2E;
+    --nWhite: #D5D9DC;
+    --nPink: #ff0066;
+}
+
+/*General*/
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--nGray);
+}
+
+/*Wrapper*/
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/*Title Container*/
+.title-container {
+    display: flexbox;
+    margin-bottom: 1em;
+}
+
+/*Search Container*/
+#search-container {
+    flex: 1;
+    display: inline;
+}
+
+#search-container input {
+    background-color: transparent;
+    width: 40%;
+    border-bottom: 2px solid var(--nWhite);
+    padding: 1em 0.3em;
+    color: var(--nWhite);
+}
+
+#search-container input:focus {
+    border-bottom-color: var(--nPink); /*Nago Pink*/
+}
+
+#search-container button {
+    padding: 1em 2em;
+    margin-left: 1em;
+    background-color: var(--nPink);
+    color: white;
+    border-radius: 3px;
+    margin-top: 0.5em;
+    cursor: pointer;
+}
+
+

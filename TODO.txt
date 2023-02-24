@@ -1,0 +1,6 @@
+TODO: Implement Difficulty Sorting
+TODO: Implement Net Blood Sorting
+TODO: Add more tags, perhaps with a horizontal scroll
+TODO: Add nago mask image to the side.
+TODO: Implement MongoDB integration to store combo data
+TODO: Record combo showcase for each card.

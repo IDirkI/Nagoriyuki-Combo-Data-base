@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta Config -->
     <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Web site created using create-snowpack-app" />
-    <link rel="stylesheet" type="text/css" href="/index.css" />
-    <title>Snowpack App</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="./styles/site.css">
+    <link rel="stylesheet" href="./styles/filters.css">
+    <link rel="stylesheet" href="./styles/combo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <title>Nagoriyuki Collection</title>
   </head>
   <body>
-    <img id="img" src="/logo.svg" />
-    <canvas id="canvas"></canvas>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+    <div class="wrapper">
+      <div class="tite-container">
+        <div id="search-container">
+          <input type="search" id="search-input" placeholder="Filter Combos">
+          <button id="search"> Search </button>
+        </div>
+      </div>
+      
+      <div id="buttons">
+        <button class="button-value" onclick="filterCombo(['round-start'])">Round Start</button>
+        <button class="button-value" onclick="filterCombo(['any'])">Any</button>
+        <button class="button-value" onclick="filterCombo(['mid-screen'])">Mid-Screen</button>
+        <button class="button-value" onclick="filterCombo(['corner'])">Corner</button>
+        <button class="button-value" onclick="filterCombo(['corner-to-corner'])">Corner-To-Corner</button>
+        <button class="button-value" onclick="filterCombo(['blood-rage-setup'])">Blood Rage Setup</button>
+        <button class="button-value" onclick="filterCombo(['wall-break'])">Wall Break</button>
+      </div>
+      <div id="combos"></div>
+    </div>
+    
+    <!-- Script Links -->
+    <script type="text/javascript" src="/dist/search.js"></script>
     <script type="module" src="/dist/index.js"></script>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

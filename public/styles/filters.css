@@ -1,0 +1,34 @@
+:root {
+    --nGray: #2B2F2E;
+    --nWhite: #D5D9DC;
+    --nPink: #ff0066;
+
+    --switch-radius: 18px;
+    --input-width: 32px;
+    --pill-width: 24px;
+    --color-gray: #ececec;
+    --color-white: #ffffff;
+    --color-green: #65b969;
+    --color-red: #e91e69;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+/*Buttons*/
+.button-value {
+    color: white;
+    border: 2px solid var(--nPink);
+    background-color: transparent;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+.active {
+    background-color: var(--nPink);
+}
+
+
+/*Blood Switch*/

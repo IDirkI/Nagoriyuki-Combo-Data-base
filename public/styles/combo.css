@@ -1,0 +1,118 @@
+:root {
+    --k: #4d88ff;
+    --p: #ff6699;
+    --s: #47d147;
+    --h: #ff3333;
+    --d: #ff8000;
+
+    --rrc: #ff4d4d;
+    --brc: #3377ff;
+    --yrc: #ffcc00;
+    --prc: #d24dff;
+
+    --very-easy: #99ff33;
+    --easy:#66ffcc;
+    --medium: #0099ff;
+    --hard: #cc33ff;
+    --very-hard: #660066;
+
+    --blood:#F55656;
+    --tension: #CEFF94;
+}
+
+#combos {
+    display: inline;
+    grid-column-gap: 1.5em;
+    padding: 2em 0;
+}
+
+/*Hide Classes*/
+.hideTag {
+    display: none;
+}
+
+.hideSearch {
+    display: none;
+}
+
+.hideBlood {
+
+}
+
+/*Card*/
+.card {
+    color: white;
+    background-color: #252420;
+    max-width: 80em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+/*Containers*/
+.container {
+    padding-left: 0.5em;
+
+    color: white;
+}
+
+.top-container {    /*Title + Difficulty*/
+    display: flex;
+}
+
+.mid-container {    /*Description + Video*/
+    display:flex;
+}
+
+/*Card Properties*/
+.combo-title {
+    flex: 1;
+    display: inline-block;
+    margin-right: 50%;
+}
+
+.combo-difficulty {
+    font-weight: 600;
+    display: inline-block;
+}
+
+.combo-notation {
+    font-weight: 500;
+    margin-top: 0.5em;
+    padding: 0.5em 0.5em;
+    border: 1px solid #8A8484;
+    background-color: #3F3B38;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.combo-description {
+    flex: 1;
+    margin-right: 10%;
+    min-width: 40%;
+    max-width: 60%;
+    font-weight: 300;
+    padding-top: 0.5em;
+    display: inline-block;
+}
+
+.video-container {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.combo-netBlood {
+    display:inline-block;
+    font-weight: 300;
+    padding-top: 1em;
+    transition: border-bottom 50ms;
+    border-bottom: 0px solid var(--blood);
+}
+
+    .combo-netBlood:hover {
+        border-bottom: 2px solid var(--blood);
+    }
+
+    .blood {
+        font-weight: 700;
+    }
